@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Ubuntu:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>.: Jogo da Velha :.</title>
+	</head>
+	<body>
+		<header class="flex flex-column align-center">
+			<h1>Tic-Tac-Toe</h1>
+			<div class="flex flex-column align-center">
+				<label for="player1">Jogador 1</label>
+				<input
+					type="text"
+					name="player1"
+					id="player1"
+					placeholder="Nome do Jogador"
+				/>
+				<label for="player2">Jogador 2</label>
+				<input
+					type="text"
+					name="player2"
+					id="player2"
+					placeholder="Nome do Jogador"
+				/>
+			</div>
+			<button id="play">Jogar</button>
+		</header>
+		<main>
+			<section class="flex justify-center">
+				<h2 id="playerName">Jogador da vez :</h2>
+			</section>
+			<section class="ttt-field">
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+				<input type="text" id="input" class="input" />
+			</section>
+			<section>
+				<div class="flex flex-column align-center justify-center">
+					<h3 id="gameResult"></h3>
+					<button id="restart">Reiniciar Jogo</button>
+				</div>
+			</section>
+		</main>
+		<script src="./JS/index.js"></script>
+	</body>
+</html>
